@@ -30,13 +30,13 @@ export default function Home() {
         <div  
           data-widget="m-connect"
           data-grant-type="token"
-          data-client-id="b26f7ccf76221dc3ead994df950adeebd4da49e4f876ccf12fcc3c3264d5918d"  
-          data-app-name="dg"  
+          data-client-id={process.env.DATA_CLIENT_ID}
+          data-app-name={process.env.DATA_APP_NAME}
           data-redirect-uri="https://davidgan.xyz/"
           data-network="1"
           //// Optional Button Settings
           data-multi="true" // have WalletConnect as an option
-          data-fallback-provider="wss://eth-mainnet.g.alchemy.com/v2/YAf6oc1YMm-1ubCZigOoM3Sy8Rl8akIg"
+          data-fallback-provider={process.env.DATA_FALLBACK_PROVIDER}
           data-show-chain="true" // show chain name
           data-show-balance="true" // show balance of wallet
           data-override-connect-text="Connect Your Wallet" // Text on button
