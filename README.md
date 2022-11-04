@@ -1,17 +1,20 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Marketplace Listing Page - Next.js
+![screenshot](./screenshot.png)
+This is a simple example of an Marketplace Listing Page. Created using the standard `create-next-app` script.
+You can see a deployed version of this template at [https://manifold-nextjs-template-marketplace.vercel.app/](https://manifold-nextjs-template-marketplace.vercel.app/)
 
-## Getting Started
-
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+## Configuration
+Create an a file called `.env.local` in the root of the project. Copy and paste the values from `env.example` into the `.env.local` file and fill those values in with your own. `DATA_FALLBACK_NETWORK` is required and `DATA_FALLBACK_PROVIDER` is optional if you want people to see your site even if they do not have Metamask installed on their browser.
 
 
+## Available Scripts
+In the project directory, you can run:
+
+`yarn start`
+Open http://localhost:3000 to view it in your browser.
+
+The page will reload when you make changes.
+You may also see any lint errors in the console.
+
+`yarn build`
+Builds the app for production.
